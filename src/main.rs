@@ -62,6 +62,7 @@ impl HanoiGame {
     
         self.move_discs(num_discs - 1, from, aux, to)?;
         self.move_disc(from, to)?;
+        self.print_game();
         self.move_discs(num_discs - 1, aux, to, from)?;
 
         Ok(())
