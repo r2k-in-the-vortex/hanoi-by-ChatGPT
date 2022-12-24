@@ -87,6 +87,8 @@ fn main() {
     let num_discs: u32 = num_discs_str.trim().parse().expect("Invalid input");
 
     let mut game = HanoiGame::new(num_discs);
+    
+    println!("I will now play the game:");
     game.move_discs(num_discs, 0, 2, 1).expect("Error solving game");
 
     
